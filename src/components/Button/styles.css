@@ -1,0 +1,7 @@
+.purpose_button {
+  border: 1px solid #1e1e1e;
+  padding: 0.8em;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

@@ -1,0 +1,21 @@
+.social-signUp {
+  border: 1px solid #1e1e1e;
+  width: 90%;
+  display: flex;
+  margin-block: 1.5em;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 8px;
+  padding: 0.7em 0.5em;
+}
+
+.center-text {
+  margin: 0;
+  text-align: center;
+}
+
+.login-text {
+  color: #0267ff;
+  font-weight: 700;
+}

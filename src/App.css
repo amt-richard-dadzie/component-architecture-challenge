@@ -1,0 +1,25 @@
+#root {
+  height: 100vh;
+  display: flex;
+}
+
+.one {
+  width: 50%;
+  height: 100%;
+  background-color: #0267ff;
+}
+
+.two {
+  width: 50%;
+  height: calc(100% - 7rem);
+  padding: 3.5rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.content {
+  width: 60%;
+  margin: 0 auto;
+}
