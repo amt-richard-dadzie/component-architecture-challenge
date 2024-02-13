@@ -1,7 +1,22 @@
 .purpose_button {
-  border: 1px solid #1e1e1e;
-  padding: 0.8em;
+  border: 1px solid #838383;
+  border-radius: 20px;
+  width: 80%;
+  margin-bottom: 30px;
+  margin-inline: auto;
+  padding-block: 0.3em;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 20px;
+}
+
+.purpose_button:hover {
+  background-color: #0267ff;
+  cursor: pointer;
+  color: #fff;
+}
+
+.purpose_button span {
+  font-size: 20px;
 }

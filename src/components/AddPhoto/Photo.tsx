@@ -5,7 +5,7 @@ import CustomButton from "../Button/CustomButton";
 import { useSteps } from "../../contexts/StepsContext";
 
 const Photo = () => {
-  const { handleNextStep } = useSteps();
+  const { handleNextStep, handleSkipStep } = useSteps();
 
   return (
     <div className="content">
@@ -17,7 +17,9 @@ const Photo = () => {
         <img src={person} alt="avatar_placeholder" width="70%" />
       </div>
       <CustomButton handleClick={handleNextStep} text="Upload a photo" />
-      <p className="skip_button">Skip</p>
+      <p className="skip_button" onClick={handleSkipStep}>
+        Skip
+      </p>
     </div>
   );
 };

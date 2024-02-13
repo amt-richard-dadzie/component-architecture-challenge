@@ -1,4 +1,4 @@
-import addIcon from "../../assets/Vector.png";
+import { FaPlus } from "react-icons/fa6";
 import "./styles.css";
 
 interface PurposeButtonProps {
@@ -7,7 +7,7 @@ interface PurposeButtonProps {
 const PurposeButton = ({ text }: PurposeButtonProps) => {
   return (
     <div className="purpose_button">
-      <img src={addIcon} alt="add_icon" />
+     <FaPlus />
       <span>{text}</span>
     </div>
   );
