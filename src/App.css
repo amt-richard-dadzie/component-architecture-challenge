@@ -9,6 +9,15 @@
   background-color: #0267ff;
 }
 
+.image-container {
+  width: 80%;
+  height: 50%;
+}
+
+img {
+  max-width: 100%;
+}
+
 .two {
   width: 50%;
   height: calc(100% - 7rem);

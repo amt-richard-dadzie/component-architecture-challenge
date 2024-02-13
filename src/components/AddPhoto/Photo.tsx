@@ -2,8 +2,11 @@ import Header from "../Header/Header";
 import person from "../../assets/person.png";
 import "./styles.css";
 import CustomButton from "../Button/CustomButton";
+import { useSteps } from "../../contexts/StepsContext";
 
 const Photo = () => {
+  const { handleNextStep } = useSteps();
+
   return (
     <div className="content">
       <Header
@@ -13,7 +16,7 @@ const Photo = () => {
       <div className="avatar">
         <img src={person} alt="avatar_placeholder" width="70%" />
       </div>
-      <CustomButton text="Upload a photo" />
+      <CustomButton handleClick={handleNextStep} text="Upload a photo" />
       <p className="skip_button">Skip</p>
     </div>
   );

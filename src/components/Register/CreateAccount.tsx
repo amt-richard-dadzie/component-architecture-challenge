@@ -2,16 +2,11 @@ import Header from "../Header/Header";
 import CustomInputField from "../Input/CustomInputField";
 import googleIcon from "../../assets/Google logo.png";
 import "./styles.css";
-import { useAppDispatch } from "../../app/store";
-import { setStep } from "../../utils/stepsSlice";
+import { useSteps } from "../../contexts/StepsContext";
+import CustomButton from "../Button/CustomButton";
 
 const CreateAccount = () => {
-
-  const dispatch = useAppDispatch();
-
-  const handleClick = () => {
-    dispatch(setStep("Step_2"))
-  }
+  const { handleNextStep } = useSteps();
   return (
     <div className="content">
       <Header title="Create Account" />
@@ -31,7 +26,7 @@ const CreateAccount = () => {
           type="password"
           placeholder="**********"
         />
-        <button onClick={handleClick}>Create Account</button>
+        <CustomButton text="Create Account" handleClick={handleNextStep} />
       </form>
       <div className="social-signUp">
         <img src={googleIcon} alt="google icon" width="30px" />
